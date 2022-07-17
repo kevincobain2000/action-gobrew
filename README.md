@@ -31,7 +31,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
-      - uses: kevincobain2000/action-gobrew@v1
+      - uses: kevincobain2000/action-gobrew@v1.0.0
         with:
           version: ${{ matrix.go-version }}
 
