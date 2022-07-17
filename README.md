@@ -39,5 +39,17 @@ jobs:
         run: go version
 ```
 
-# About Go Versions
+# About `go-version`
 
+
+```js
+1.16               - will install 1.13
+1.16.1             - will install 1.13
+1.16beta1          - will install 1.16beta1
+1.16rc1            - will install 1.16rc1
+1.16@latest        - will install 1.16.15, which is the latest stable on 1.16
+1.16@dev-latest    - will install 1.16.15, which is the latest stable on 1.16
+
+latest             - will install latest stable version of Go
+dev-latest         - will install latest stable version, including rc|beta of Go
+```
