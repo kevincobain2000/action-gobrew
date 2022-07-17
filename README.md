@@ -50,6 +50,6 @@ jobs:
 1.16@latest        - will install 1.16.15, which is the latest stable on 1.16
 1.16@dev-latest    - will install 1.16.15, which is the latest stable on 1.16
 
-latest             - will install latest stable version of Go
-dev-latest         - will install latest stable version, including rc|beta of Go
+latest             - will install latest stable version
+dev-latest         - will install latest version, include rc|beta
 ```
