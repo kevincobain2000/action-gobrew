@@ -4,7 +4,8 @@
   </a>
 </p>
 <p align="center">
-  Action for gobrew
+  Action for gobrew.
+  Setup Go for Github Actions.
 </p>
 
 **Quick Setup:** One command to install Go and manage versions.
@@ -16,7 +17,7 @@
 **Flexible:** Manage multiple Go versions including beta and rc.
 
 
-# Build Status
+# Yaml
 
 ```yaml
 on: [push]
@@ -37,3 +38,6 @@ jobs:
       - name: Go
         run: go version
 ```
+
+# About Go Versions
+
