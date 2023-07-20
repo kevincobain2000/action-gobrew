@@ -19,7 +19,21 @@
 
 # Yaml
 
+
 ```yaml
+  # use latest stable version
+  - uses: kevincobain2000/action-gobrew@v2.2
+```
+
+```yaml
+  # with specific version
+  - uses: kevincobain2000/action-gobrew@v2.2
+    with:
+      version: 1.16
+```
+
+```yaml
+# On Matrix
 on: [push]
 name: CI
 jobs:
@@ -31,7 +45,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
-      - uses: kevincobain2000/action-gobrew@v1
+      - uses: kevincobain2000/action-gobrew@v2.2
         with:
           version: ${{ matrix.go-version }}
 

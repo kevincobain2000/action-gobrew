@@ -8,7 +8,8 @@ branding:
 inputs:
   version:
     description: "go version"
-    required: true
+    required: false
+    default: "latest"
 runs:
   using: "composite"
   steps:
