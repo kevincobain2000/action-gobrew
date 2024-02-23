@@ -13,7 +13,7 @@ inputs:
   working-dir:
     description: "working dir"
     required: false
-    default: "."    
+    default: "."
 runs:
   using: "composite"
   steps:
@@ -26,6 +26,7 @@ runs:
       shell: bash
 
     - name: gobrew use
-      working-dir: ${{ inputs.working-dir }}
-      run: gobrew use ${{ inputs.version }}
+      run: |
+        cd ${{ inputs.working-dir }}
+        gobrew use ${{ inputs.version }}
       shell: bash
