@@ -22,7 +22,7 @@ runs:
         echo "$HOME/.gobrew/current/bin" >> $GITHUB_PATH
         echo "$HOME/.gobrew/bin"  >> $GITHUB_PATH
         echo "$HOME/go/bin"  >> $GITHUB_PATH
-        curl -sLk https://raw.githubusercontent.com/kevincobain2000/gobrew/master/git.io.sh | sh
+        curl -sLk https://raw.githubusercontent.com/kevincobain2000/gobrew/master/git.io.sh | bash
       shell: bash
 
     - name: gobrew use
